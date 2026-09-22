@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vector DB Chunking Visualizer</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-sarif; background-color: #0f172a; color: #f8fafc; padding: 20px; }
+        h1 { color: #38bdf8; text-align: center; }
+        .stats { background-color: #1e293b; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+        .chunk-card { background-color: #1e293b; border-left: 4px solid #38bdf8; padding: 15px; border-radius: 6px; }
+        .badge { background-color: #0284c7; color: white; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        .text-content { background-color: #0f172a; padding: 10px; bprder-radius: 4px; font-family: monospace; color: #a5f3fc; margin-top: 8px; }
+    </style> 
+</head>
+<body>
+    <h1>2027 Vector Indexing pipeline Report</h1>
+    <div class="stats">
+        <strong>Total Document Length:</strong> 328 chars 
+        <strong>Chunk Size:</strong> 100 
+        <strong>Overlap:</strong> 20
+        <strong>Generated Chunks:</strong> 4
+    </div>
+    <h2>Indexed Vector Chunks</h2>          
+
+    <div class="chunk-card">
+        <span class="badge">CHUNK_0</span>
+        <small style="color: #94a3b8;"> (span: 0 to 100)</small>
+        <div class="text-content">Generative AI infrastructure relies heavily on Vector Databases. Vector embeddings map semantic mean</div>
+     </div>
+    
+    <div class="chunk-card">
+        <span class="badge">CHUNK_1</span>
+        <small style="color: #94a3b8;"> (span: 80 to 180)</small>
+        <div class="text-content">gs map semantic meaning into high_dimensional numrical spaces. To index massive datasets, text must </div>
+     </div>
+    
+    <div class="chunk-card">
+        <span class="badge">CHUNK_2</span>
+        <small style="color: #94a3b8;"> (span: 160 to 260)</small>
+        <div class="text-content">datasets, text must be devided into smaller chunks using precise renges. Retrieval Augmented Generat</div>
+     </div>
+    
+    <div class="chunk-card">
+        <span class="badge">CHUNK_3</span>
+        <small style="color: #94a3b8;"> (span: 240 to 328)</small>
+        <div class="text-content">al Augmented Generation (RAG) fetches these relevant chunks to eliminate hallucinations.</div>
+     </div>
+    
+</body>
+</html>
